@@ -5,21 +5,21 @@ jobs:
   ubuntu:
     runs-on: ubuntu-latest
     steps:
-     -name: step 1
-      -run: date
+      - name: step1
+      - run: date
   windows:
     runs-on: windows-latest
     steps:
-     -name: step 1
-      -run: date
-  macod:  
+      - name: step1
+      - run: date
+  macos:  
     runs-on: macos-latest
     steps:
-     -name: step 1
-      -run: date
+      - name: step 1
+      - run: date
   depends:  
     needs: [ubuntu, windows, macos]
     runs-on: ubuntu-latest
     steps:
-     -name: step 1
-      -run: date
+     - name: step 1
+     - run: date
